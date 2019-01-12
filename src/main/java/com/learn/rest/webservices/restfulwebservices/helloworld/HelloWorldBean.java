@@ -1,4 +1,4 @@
-package com.learn.rest.webservices.restfulwebservices;
+package com.learn.rest.webservices.restfulwebservices.helloworld;
 
 public class HelloWorldBean
 {
@@ -7,14 +7,6 @@ public class HelloWorldBean
     public HelloWorldBean(String message)
     {
         this.message = message;
-
-    }
-
-    @Override
-    public String toString() {
-        return "HelloWorldBean{" +
-                "message='" + message + '\'' +
-                '}';
     }
 
     public String getMessage() {
@@ -24,6 +16,11 @@ public class HelloWorldBean
     public void setMessage(String message) {
         this.message = message;
     }
-
+    @Override
+    public String toString() {
+        return "HelloWorldBean{" +
+                "message='" + message + '\'' +
+                '}';
+    }
 
 }
