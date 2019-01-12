@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Applicant
 {
-    private int application_num;
+    private Integer application_num;
     private String applicant_name;
     private Date dob;
 
@@ -15,7 +15,7 @@ public class Applicant
         this.dob = dob;
     }
 
-    public int getApplication_num()
+    public Integer getApplication_num()
     {
         return application_num;
     }

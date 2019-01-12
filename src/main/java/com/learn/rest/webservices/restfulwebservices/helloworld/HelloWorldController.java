@@ -1,6 +1,6 @@
 package com.learn.rest.webservices.restfulwebservices.helloworld;
 
-import com.learn.rest.webservices.restfulwebservices.HelloWorldBean;
+import com.learn.rest.webservices.restfulwebservices.helloworld.*;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
