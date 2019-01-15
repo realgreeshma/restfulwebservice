@@ -13,11 +13,12 @@ public class HelloWorldController
        return "Welcome to Controller";
    }
 //mapping a bean class
-   @GetMapping("/hello-world-bean")
+   @GetMapping(path = "/hello-world-bean")
     public HelloWorldBean helloWorldBean()
    {
        return new HelloWorldBean("Hello !!!");
    }
+
    //mapping through path variables
     @GetMapping(path = "/helloworldbean/path-variable/{name}")
     public HelloWorldBean helloWorldBeanPathVariable(@PathVariable String name)

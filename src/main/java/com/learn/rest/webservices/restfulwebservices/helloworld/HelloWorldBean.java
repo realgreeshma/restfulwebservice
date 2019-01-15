@@ -9,8 +9,10 @@ public class HelloWorldBean
         this.message = message;
     }
 
-    public String getMessage() {
-        return message;
+//if we dont create a getter we will get an error
+    public String getMessage()
+    {
+     return message;
     }
 
     public void setMessage(String message) {
