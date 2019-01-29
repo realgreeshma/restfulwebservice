@@ -35,6 +35,7 @@ public class ApplicantDaoService
         {
             applicant.setApplication_num(++applicants_count);
         }
+        applicants.add(applicant);
         return applicant;
     }
 

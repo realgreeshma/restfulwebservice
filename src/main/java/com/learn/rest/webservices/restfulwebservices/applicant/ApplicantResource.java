@@ -1,9 +1,7 @@
 package com.learn.rest.webservices.restfulwebservices.applicant;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -24,5 +22,17 @@ public class ApplicantResource
     public Applicant getOneApplicant(@PathVariable int id)
     {
         return service.findOneApplicant(id);
+    }
+
+    /*input - details of user
+    output - CREATED n return created URI
+*/
+    @PostMapping("/Applicants")
+    public void createApplicant(@RequestBody Applicant applicant)
+    {
+        Applicant savedApplicant = service.save(applicant);
+
+        
+
     }
 }

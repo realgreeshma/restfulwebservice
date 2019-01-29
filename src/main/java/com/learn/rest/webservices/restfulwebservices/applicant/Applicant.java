@@ -8,6 +8,8 @@ public class Applicant
     private String applicant_name;
     private Date dob;
 
+    protected Applicant(){}
+
     public Applicant(int application_num, String applicant_name, Date dob)
     {
         this.application_num = application_num;
